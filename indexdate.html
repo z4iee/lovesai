@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date?</title>
+    <link rel="stylesheet" href="styledate.css">
+</head>
+<body>
+
+    <div class="container">
+    <div>
+        <h1 class="ask">
+            Do you love sai?
+        </h1>
+    </div>
+    
+    <div class="gif_container">
+        <img src="https://media1.tenor.com/m/YHGmyXRaL3YAAAAd/smiling-dog.gif" alt="cute fif">
+    </div>
+    
+
+<div class="buttons">
+
+<button class="btn" id="noButton" onclick="nextPage()">no </button=>
+
+<button class="btn" id="yesButton" onmouseover="moveButton()"> yes </button>
+
+</div> 
+<script>
+
+    function nextPage()
+    {
+        window.location.href="yes.html"
+    }
+
+    function moveButton()
+    {
+        var x=Math.random() * ( window.innerWidth - document.getElementById('yesButton').offsetWidth);
+        var y= Math.random() * ( window.innerHeight - document.getElementById('yesButton').offsetHeight);
+        document.getElementById('yesButton').style.left=`${x}px`;
+        document.getElementById('yesButton').style.top=`${y}px`;
+    }
+</script>
+
+</div> 
+</body>
+</html>
